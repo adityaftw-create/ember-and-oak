@@ -7,12 +7,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --cream: #f5efe6;
-    --dark: #1a1410;
-    --amber: #c8863a;
-    --warm: #8b5e3c;
-    --muted: #6b5a4e;
-    --light-muted: #d9cfc6;
+    --cream: #f5ece8;
+    --dark: #1a0f0f;
+    --amber: #c0392b;
+    --warm: #922b21;
+    --muted: #6b4a4a;
+    --light-muted: #d9c4c4;
   }
 
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -69,7 +69,7 @@
   .hero-bg {
     position: absolute; inset: 0;
     background:
-      linear-gradient(160deg, rgba(26,20,16,0.55) 0%, rgba(26,20,16,0.2) 60%, rgba(200,134,58,0.18) 100%),
+      linear-gradient(160deg, rgba(26,10,10,0.60) 0%, rgba(26,10,10,0.2) 60%, rgba(192,57,43,0.22) 100%),
       url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80') center/cover no-repeat;
     transform: scale(1.04);
     animation: heroZoom 12s ease-out forwards;
@@ -289,7 +289,7 @@
   /* ── RESERVATION ── */
   .reservation {
     background: #1a1410;
-    background-image: radial-gradient(ellipse at 70% 50%, rgba(200,134,58,0.08) 0%, transparent 65%);
+    background-image: radial-gradient(ellipse at 70% 50%, rgba(192,57,43,0.12) 0%, transparent 65%);
     padding: 7rem 3rem; color: var(--cream);
     text-align: center;
   }
@@ -575,7 +575,7 @@
     e.preventDefault();
     const btn = e.target.querySelector('button');
     btn.textContent = '✓ Booking Confirmed!';
-    btn.style.background = '#4a9e6a';
+    btn.style.background = '#27ae60';
     setTimeout(() => { btn.textContent = 'Confirm Booking'; btn.style.background = ''; e.target.reset(); }, 3000);
   }
 </script>
