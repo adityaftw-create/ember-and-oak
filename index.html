@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ember & Oak — Modern Dining</title>
+<title>Ember and Oak Modern Dining</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --cream: #f5ece8;
-    --dark: #1a0f0f;
-    --amber: #c0392b;
-    --warm: #922b21;
-    --muted: #6b4a4a;
-    --light-muted: #d9c4c4;
+    --cream: #fdfbf0;
+    --dark: #1a1800;
+    --amber: #d4a017;
+    --warm: #b8860b;
+    --muted: #6b5f2e;
+    --light-muted: #ddd5a0;
   }
 
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -36,7 +36,7 @@
     transition: background 0.4s, backdrop-filter 0.4s;
   }
   nav.scrolled {
-    background: rgba(26, 20, 16, 0.88);
+    background: rgba(20, 18, 0, 0.88);
     backdrop-filter: blur(12px);
   }
   .nav-logo {
@@ -69,7 +69,7 @@
   .hero-bg {
     position: absolute; inset: 0;
     background:
-      linear-gradient(160deg, rgba(26,10,10,0.60) 0%, rgba(26,10,10,0.2) 60%, rgba(192,57,43,0.22) 100%),
+      linear-gradient(160deg, rgba(20,18,0,0.62) 0%, rgba(20,18,0,0.2) 60%, rgba(212,160,23,0.22) 100%),
       url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80') center/cover no-repeat;
     transform: scale(1.04);
     animation: heroZoom 12s ease-out forwards;
@@ -111,7 +111,7 @@
     text-decoration: none; font-weight: 500;
     transition: background 0.25s, transform 0.2s;
   }
-  .btn-primary:hover { background: #d9973f; transform: translateY(-2px); }
+  .btn-primary:hover { background: #c49010; transform: translateY(-2px); }
   .btn-outline {
     border: 1px solid rgba(245,239,230,0.45); color: var(--cream);
     padding: 0.85rem 2.2rem; font-size: 0.78rem;
@@ -182,7 +182,7 @@
   .intro-image:hover img { transform: scale(1.03); }
   .intro-image::after {
     content: ''; position: absolute; inset: 0;
-    border: 1px solid rgba(200,134,58,0.3);
+    border: 1px solid rgba(212,160,23,0.3);
     transform: translate(12px, 12px);
     pointer-events: none;
   }
@@ -289,7 +289,7 @@
   /* ── RESERVATION ── */
   .reservation {
     background: #1a1410;
-    background-image: radial-gradient(ellipse at 70% 50%, rgba(192,57,43,0.12) 0%, transparent 65%);
+    background-image: radial-gradient(ellipse at 70% 50%, rgba(212,160,23,0.12) 0%, transparent 65%);
     padding: 7rem 3rem; color: var(--cream);
     text-align: center;
   }
@@ -392,7 +392,7 @@
   <div class="hero-content">
     <p class="hero-eyebrow">Fine Dining · Est. 2018</p>
     <h1>Where <em>fire</em><br>meets flavour</h1>
-    <p class="hero-sub">Wood-fired cuisine rooted in seasonal ingredients — a dining experience worth remembering.</p>
+    <p class="hero-sub">Wood-fired cuisine rooted in seasonal ingredients, a dining experience worth remembering.</p>
     <div class="hero-actions">
       <a class="btn-primary" href="#reserve">Reserve a Table</a>
       <a class="btn-outline" href="#menu">Explore Menu</a>
@@ -411,7 +411,7 @@
       <p class="intro-label">Our Philosophy</p>
       <h2>Honest food,<br><em>extraordinary</em><br>craft</h2>
       <p>Ember & Oak was born from a simple idea: the best meals come from the best ingredients, cooked with care over an open flame.</p>
-      <p>Every dish on our menu changes with the season — we work closely with local farms to bring what's freshest to your table, then let the fire do the rest.</p>
+      <p>Every dish on our menu changes with the season. We work closely with local farms to bring what's freshest to your table, then let the fire do the rest.</p>
       <div class="intro-stats">
         <div>
           <div class="stat-num">12</div>
@@ -483,8 +483,8 @@
 
 <!-- QUOTE STRIP -->
 <div class="strip">
-  <p class="strip-quote">"A meal here is less like dinner and more like theatre — every bite builds to something memorable."</p>
-  <p class="strip-attr">— The Delhi Food Chronicle, 2024</p>
+  <p class="strip-quote">"A meal here is less like dinner and more like theatre, every bite builds to something memorable."</p>
+  <p class="strip-attr">The Delhi Food Chronicle, 2024</p>
 </div>
 
 <!-- EXPERIENCE -->
@@ -501,7 +501,7 @@
       <p>Whether it's a quiet evening for two or a long celebratory dinner, the space shapes itself around the occasion.</p>
       <ul class="exp-list">
         <li>Private dining room for up to 14 guests</li>
-        <li>Chef's counter — 6 seats, live fire view</li>
+        <li>Chef's counter, 6 seats, live fire view</li>
         <li>Curated cocktail and natural wine programme</li>
         <li>Seasonal tasting menus on request</li>
       </ul>
@@ -512,7 +512,7 @@
 <!-- RESERVATION -->
 <section id="reserve" class="reservation">
   <h2 class="reveal">Reserve your evening</h2>
-  <p class="reveal">Tues–Sun · Lunch 12–3 pm · Dinner 7–11 pm</p>
+  <p class="reveal">Tues to Sun - Lunch 12 to 3 pm - Dinner 7 to 11 pm</p>
   <form class="res-form reveal" onsubmit="handleBook(event)">
     <input type="text" placeholder="Your name" required>
     <input type="date" required>
@@ -541,8 +541,8 @@
   <div class="footer-logo">Ember & Oak</div>
   <div class="footer-hours">
     <strong>Opening Hours</strong>
-    Tues – Fri: 12–3 pm &amp; 7–11 pm<br>
-    Sat – Sun: 12–11 pm (continuous)<br>
+    Tues to Fri: 12 to 3 pm and 7 to 11 pm<br>
+    Sat to Sun: 12 to 11 pm (continuous)<br>
     Closed Mondays
   </div>
   <div>
